@@ -1,0 +1,29 @@
+from IPython.display import display, HTML
+
+html_catatan = """
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catatan Sederhana</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width:700px; margin:auto; padding:1em; background:#f9f9f9; }
+    h1 { color:#333; text-align:center; }
+    .note { background:white; padding:1em; border-radius:6px; box-shadow:0 0 5px rgba(0,0,0,0.1); margin-bottom:1em; }
+  </style>
+</head>
+<body>
+  <h1>Catatan Sederhana</h1>
+  <div class="note">
+    <h2>Catatan 1</h2>
+    <p>Ini adalah catatan pertama yang bisa dibaca semua orang.</p>
+  </div>
+  <div class="note">
+    <h2>Catatan 2</h2>
+    <p>Catatan kedua juga sederhana dan mudah dipahami.</p>
+  </div>
+</body>
+</html>
+"""
+
+display(HTML(html_catatan))
