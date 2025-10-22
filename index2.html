@@ -1,0 +1,45 @@
+from IPython.display import display, HTML
+
+html_code = """
+<style>
+  body {
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    padding: 1em;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 0.5em;
+    padding: 1em;
+    box-shadow: 0 0.3em 1em rgba(0,0,0,0.1);
+  }
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  textarea {
+    width: 100%;
+    height: 10em;
+    font-size: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    resize: vertical;
+  }
+  p {
+    font-size: 0.9em;
+    color: #666;
+  }
+</style>
+
+<div class="container">
+  <h1>Catatan Sederhana</h1>
+  <p>Tulis apa pun di bawah ini. Data tidak akan disimpan permanen.</p>
+  <textarea placeholder="Tulis catatanmu di sini..."></textarea>
+</div>
+"""
+
+# Tampilkan di Jupyter / Colab
+display(HTML(html_code))
